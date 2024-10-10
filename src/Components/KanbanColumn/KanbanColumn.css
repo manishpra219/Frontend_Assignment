@@ -1,0 +1,69 @@
+/* Fix Kanban columns for multiple users */
+.kanban-columns {
+  display: flex;
+  flex-wrap: wrap; /* Ensures columns wrap and don't go into a single line */
+  justify-content: space-between; /* Adjust columns equally */
+  gap: 15px; /* Adds space between columns */
+}
+
+/* Fix for TicketCard header with proper spacing */
+.ticket-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px; /* Add spacing between the header and other content */
+}
+
+/* Adding some margin between ID and Avatar */
+.ticket-header span {
+  margin-right: 10px; /* Adds spacing between the ID and the avatar */
+}
+
+.kanban-column {
+  background-color: #f4f4f4;
+  padding: 10px;
+  width: 30%;
+  margin-right: 10px;
+  border-radius: 10px;
+  min-width: 300px;
+  max-width: 32%;
+  box-sizing: border-box;
+}
+
+/* Ensure ticket cards fill the width of their columns */
+.ticket-card {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Ensure cards fill their column */
+}
+
+/* Flexbox to keep the header items in one line */
+.ticket-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ticket-card img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-left: 10px; /* Add spacing between the avatar and the text */
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+  .kanban-columns {
+    flex-direction: column;
+  }
+
+  .kanban-column {
+    width: 100%; /* Columns will take full width on small screens */
+    margin-right: 0;
+  }
+}

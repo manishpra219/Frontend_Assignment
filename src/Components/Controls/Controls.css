@@ -1,0 +1,42 @@
+.controls {
+  position: relative;
+}
+
+.display-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.display-btn:hover {
+  background-color: #0056b3;
+}
+
+.group-sort-controls {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 8px;
+  z-index: 100;
+}
+
+.group-sort-controls label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.group-sort-controls select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}

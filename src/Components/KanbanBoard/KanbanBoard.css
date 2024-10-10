@@ -1,0 +1,109 @@
+/* Kanban board container */
+.kanban-board {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* Display menu for sorting and grouping */
+.display-menu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Display button styling */
+.display-menu button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Dropdown container for Group by and Sort by */
+.dropdown-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+/* Dropdown elements styling */
+.group-by,
+.sort-by {
+  margin-bottom: 10px;
+}
+
+/* Kanban columns container */
+.kanban-columns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+/* Individual Kanban columns */
+.kanban-column {
+  background-color: #f4f4f4;
+  padding: 10px;
+  flex: 1 1 30%;
+  margin-right: 10px;
+  border-radius: 10px;
+  min-width: 300px; /* Ensures columns don't get too narrow */
+  max-width: 32%;
+  box-sizing: border-box;
+}
+
+/* Column heading */
+.kanban-column h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+/* Ticket card styling */
+.ticket-card {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Ensure cards fill their column */
+}
+
+/* Avatar inside ticket card */
+.ticket-card img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+/* Ticket title */
+.ticket-card h4 {
+  font-size: 16px;
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+/* Ticket description */
+.ticket-card p {
+  font-size: 14px;
+  color: gray;
+  margin: 0;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .kanban-columns {
+    flex-direction: column;
+  }
+
+  .kanban-column {
+    width: 100%;
+    margin-right: 0;
+  }
+}
